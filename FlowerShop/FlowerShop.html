@@ -1,0 +1,317 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FlowerStyle.css">
+    <title>Flower Online</title>
+    <script>
+        function checkBlank()
+        {
+             if(document.getElementById('CardNumber').value == "")
+             {
+                 alert('please enter cardNumber');
+                 document.getElementById('CardNumber').style.borderColor="red";
+                 return false;
+             }
+             
+             if(document.getElementById('Please Select').value == "")
+             {
+                 alert('please enter date');
+                 document.getElementById('Please Select').style.borderColor="red";
+                 return false;
+             }
+             
+             if(document.getElementById('Please Selects').value == "")
+             {
+                 alert('please enter year');
+                 document.getElementById('Please Selects').style.borderColor="red";
+                 return false;
+             }
+             
+             if(document.getElementById('Security').value == "")
+             {
+                 alert('please enter your security code ');
+                 document.getElementById('Security').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('CardHolder').value == "")
+             {
+                 alert('please enter your cardholder name ');
+                 document.getElementById('CardHolder').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('Address').value == "")
+             {
+                 alert('please enter your Address1 ');
+                 document.getElementById('Address').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('Address2').value == "")
+             {
+                 alert('please enter your Address2 ');
+                 document.getElementById('Address2').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('Address3').value == "")
+             {
+                 alert('please enter your Address3 ');
+                 document.getElementById('Address3').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('Town').value == "")
+             {
+                 alert('please enter your Town/City ');
+                 document.getElementById('Town').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('Region').value == "")
+             {
+                 alert('please enter your Region ');
+                 document.getElementById('Region').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('PostalCode').value == "")
+             {
+                 alert('please enter your PostalCode/ZipCode');
+                 document.getElementById('PostalCode').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('country select').value == "")
+             {
+                 alert('please choose your country ');
+                 document.getElementById('country select').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('Telephone').value == "")
+             {
+                 alert('please enter your Telephone number ');
+                 document.getElementById('Telephone').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('Fax').value == "")
+             {
+                 alert('please enter your Fax ');
+                 document.getElementById('Fax').style.borderColor="red";
+                 return false;
+             }
+             if(document.getElementById('EmailAddress').value == "")
+             {
+                 alert('please enter your EmailAddress ');
+                 document.getElementById('EmailAddress').style.borderColor="red";
+                 return false;
+             }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form method = "POST" action="#" onsubmit=" return checkBlank()">
+    <h2>FLOWER SHOP ONLINE</h2>
+    
+        <div id="NavigateBar"></div>
+        
+        <div class="column">
+                        <img src="download (1).jpg" alt="Flowers"width="80" height="90">
+        </div>  
+        
+        <div class="right">
+            <table>
+        <tr>
+            <td>
+                <img src="question.png" style="float: right;margin-top: 1800%;margin-right: 3200%;"alt="Flowers"width="10" height="10">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <img src="question.png" style="float: right;margin-top: 1350%;margin-right: 3200%;"alt="Flowers"width="10" height="10">
+            </td>
+        </tr>
+    </table>
+        </div>
+       
+
+            
+<div class="middle">
+            <div class="Margin">
+            <table >
+                <h3>Secure Payment Page</h3>
+            <tr>
+                <td><label><b>Select Language</b></label></td>
+                <td>
+                <select id="Please Select">
+                <option value="Tamil">Tamil</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Telugu">Telugu</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Payment method</label></td>
+                <td><b>Visa</b></td>
+            </tr>
+            <tr>
+                <td><label>Description</label></td>
+                <td><b>Item Ordered</b></td>
+            </tr>
+            <tr>
+                <td><label>Amount</label></td>
+                <td><b>&euro; 100.00</td>
+                    <td rowspan="3"><img src="download.png" alt="Flowers"width="50"></td>
+            </tr>
+
+            </table>
+
+        </div>
+        <div  class="design">
+            <table>
+           <tr>
+               <td colspan="2" style="color:white;background-color: rgb(149,207,13);">Card Details</td>
+              
+               
+           </tr>
+           <tr>
+               <td colspan="2">You must fill in fields marked with *</td>
+
+           </tr>
+           <tr>
+               <td><label>* Card Number</label></td>
+               <td><input type="text" id="CardNumber" size = 60% name="Cardno"></td>
+           </tr>
+           <tr>
+               <td style="text-decoration-line: underline;">*<label>Security Code</label></td>
+               <td><input type="text" id="Security" size = 60% name="SecurityCode"></td>
+
+           </tr>
+           <tr>
+               
+               <td><label>* Expire Date</label></td>
+               
+                <td>
+                    <select id="Please Select">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    </select>
+                    
+                    <select id="Please Selects">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option> 
+                    <option value="2022">2022</option>
+                    </select>
+                    </td>
+               </td>
+           </tr>
+           <tr>
+               <td><label>* CardHolder's name</label></td>
+               <td><input type="text" id="CardHolder" size = 60% name="holder"></td>
+               
+           </tr>
+
+            </table>
+        </div>
+            <div class="design">
+                <table>
+               <tr>
+                   <td colspan="2" style="color:white;background-color: rgb(149,207,13);">CardHolder Details</td>
+               </tr>
+               <tr>
+                <td colspan="2">You must fill in fields marked with *</td>
+ 
+            </tr>
+            <tr>
+                <td><label>* Address 1</label></td>
+                <td><input type="text" id="Address" size = 60% name="AddressNumber"></td>
+            </tr>
+            <tr>
+                <td><label> &nbsp;&nbsp;Address 2</label></td>
+                <td><input type="text" id="Address2" size = 60% name="AddressNumber2"></td>
+            </tr>
+            <tr>
+                <td><label> Address3</label></td>
+                <td><input type="text" id="Address3" size = 60% name="AddressNumber3"></td>
+            </tr>
+            <tr>
+                <td><label>* Town/City</label></td>
+                <td><input type="text" id="Town" size = 60% name="City"></td>
+            </tr>
+            <tr>
+                <td><label> Region</label></td>
+                <td><input type="text" id="Region" size = 60% name="RegionName"></td>
+            </tr>
+            <tr>
+                <td><label>* PostCode/ZipCode</label></td>
+                <td><input type="text" id="PostalCode" size = 30% name="Zip Code"></td>
+            </tr>
+            <tr>
+                <td><label>Country</label></td>
+               
+                <td style="size: 40%">
+                    <select id="country select" >
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="America">America</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Iraq">Iraq</option>
+                    </select>
+                    </td>
+            </tr>
+            <tr>
+                <td><label>Telephone</label></td>
+                <td><input type="text" id="Telephone" size = 30% name="TelephoneNumber"></td>
+            </tr>
+            <tr>
+                <td><label>Fax</label></td>
+                <td><input type="text" id="Fax" size = 30% name="Fax" ></td>
+            </tr>
+            <tr>
+                <td><label>Email Address</label></td>
+                <td><input type="text" id="EmailAddress" size = 60% name="EmailId"></td>
+            </tr>
+        </table>
+        </div>
+            <div class="Margin">
+                <img src="Reloading.jpg" alt="icon"width="15">
+                <input type="submit" style ="border: none;color: rgb(66, 31, 133);background-color: white;"value="START AGAIN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" style ="border: none;color: rgb(66, 31, 133);background-color: white;"value="MAKE PAYMENT">
+                
+                <img src="images.png" alt="icon"width="15">
+                 <br>
+                 <br>
+                 <img src="cancel.png" alt="icon"width="15"> 
+                 <input type="submit" style ="border: none;color: rgb(66, 31, 133);background-color: white;"value="CANCEL">
+                    <hr style="border-color: rgb(122, 138, 34);">
+             </div>  
+             <div class="Margin">
+             <table>
+                 <tr>
+                     <td style="color: rgb(36, 5, 95);font-family: Arial, Helvetica, sans-serif;font-size: larger;">Refunds and Returns</td>
+                 </tr>
+                 <tr>
+                     <td style="font-size:small;color:rgb(36, 5, 95)">For more information visit our <a href="@" style="color: rgb(66, 31, 133);">Refunds and returns policy</a></td>
+                 </tr>
+                 <tr>
+                     
+                     <td colspan="1" style="font-size:x-small;color: rgb(74, 26, 165);">Payments Powered By</td>
+                     
+                     <td rowspan="2" style="font-size: small;color:black" >For help with your Payments visit the <a href="#" style="color:black">WorldPay help</a> </td>
+                 </tr>
+                 <tr>
+                    <td colspan="1" style="color: rgb(74, 26, 165)" ><b>WorldPay</b></td>
+                 </tr>
+             </table>
+             </div>
+</div>
+             
+             
+             <div  style="background-color: rgb(149,207,13);font-size:xxx-large;color:rgb(15, 15, 77);font-family:Arial, Helvetica, sans-serif;"><pre>Thank you for shopping at Flowershop. Have a nice day</pre></td></div>
+            </div>
+            
+
+
+        </form>
+            </body>
+
+</html>
